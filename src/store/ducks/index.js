@@ -1,3 +1,7 @@
 import { combineReducers } from 'redux';
 
-export default combineReducers({main:(state = {}) => state});
+import mapPoints from './mapPoints';
+
+export default combineReducers({
+  mapPoints,
+});
