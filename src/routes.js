@@ -1,8 +1,8 @@
 import { StackNavigator } from 'react-navigation';
-import Main from 'pages/Main';
+import Map from 'pages/Map';
 
 const Routes = StackNavigator({
-  Main: { screen: Main },
+  Map: { screen: Map },
 });
 
 export default Routes;
