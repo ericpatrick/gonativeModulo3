@@ -26,11 +26,13 @@ class Map extends Component {
   };
   renderMarker = user => (
     <MapView.Marker key={user.id} coordinate={user.coordinate}>
-      <Image
-        style={styles.imageMarker}
-        source={{ uri: user.avatarUrl }}
-        onLoad={() => this.forceUpdate()}
-      />
+      <View style={styles.imageContainer}>
+        <Image
+          style={styles.imageMarker}
+          source={{ uri: user.avatarUrl }}
+          onLoad={() => this.forceUpdate()}
+        />
+      </View>
       <MapView.Callout>
         <View style={styles.mapPopup}>
           <Text style={styles.username}>{user.name}</Text>

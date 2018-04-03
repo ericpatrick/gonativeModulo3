@@ -24,7 +24,7 @@ class ModalPoint extends Component {
     requestUser: PropTypes.func.isRequired,
     modalIsVisible: PropTypes.bool.isRequired,
     loading: PropTypes.bool.isRequired,
-    error: PropTypes.oneOfType([PropTypes.string, null]).isRequired,
+    error: PropTypes.string.isRequired,
   };
 
   state = {

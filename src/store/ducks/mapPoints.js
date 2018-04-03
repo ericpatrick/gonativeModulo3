@@ -10,7 +10,7 @@ const initialState = {
   coordinate: null,
   loading: false,
   users: [],
-  error: null,
+  error: '',
 };
 
 export default function mapPoints(state = initialState, action) {
@@ -20,13 +20,13 @@ export default function mapPoints(state = initialState, action) {
         ...state,
         addNewPoint: !state.addNewPoint,
         coordinate: action.payload.coordinate,
-        error: null,
+        error: '',
       };
     case Types.REQUEST_USER:
       return {
         ...state,
         loading: true,
-        error: null,
+        error: '',
       };
     case Types.USER_SUCCESS:
       return {
@@ -34,7 +34,7 @@ export default function mapPoints(state = initialState, action) {
         addNewPoint: false,
         coordinate: null,
         loading: false,
-        error: null,
+        error: '',
       };
     case Types.USER_ERROR:
       return {

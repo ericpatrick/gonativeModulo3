@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-// import { colors } from 'styles';
+import { colors } from 'styles';
 
 const styles = StyleSheet.create({
   container: {
@@ -7,6 +7,11 @@ const styles = StyleSheet.create({
   },
   map: {
     ...StyleSheet.absoluteFillObject,
+  },
+  imageContainer: {
+    borderRadius: 20,
+    padding: 2,
+    backgroundColor: colors.white,
   },
   imageMarker: {
     borderRadius: 16,
